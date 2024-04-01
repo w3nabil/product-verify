@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Company | Product Verification</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Verify The Product Online</h1>
+        <p>Enter the product code to verify the product</p>
+        <form action="/verify" method="post">
+            <label for="product_id">Please enter the product code</label>
+            <input type="text" name="product_id" id="product_id" placeholder="Enter product code" autocomplete="off" required>
+            <label for="key">Please enter the 4 digit verification key</label>
+            <input type="text" name="key" id="key" placeholder="Enter 4 digit key" autocapitalize="Online" autocomplete="off" required>
+            <button type="submit">Verify</button>
+        </form>
+    </div>
+    <div class="credit">
+        <p style="width: 100%; text-align: center;">
+            <a href="https://github.com/w3nabil">
+                <img src="{{url_for('static', filename='img/sponsor.png')}}" alt="" width="300px" height="auto">
+            </a>
+        </p>
+    </div>
+</body>
+</html>

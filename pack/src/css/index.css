@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #444;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://img.freepik.com/free-vector/perspective-japanese-street-neon-lights_52683-44988.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    min-width: 500px;
+    padding-bottom: 50px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.credit {
+    margin-top: 20px;
+}

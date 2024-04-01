@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X company | Product Registration</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/register.css')}}">
+</head>
+<body>
+    <form action="" method="post">
+        <h1>Product Registration</h1>
+        <div class="form-group">
+            <label for="name">Product Name</label>
+            <input type="text" id="name" name="name" required autocomplete="off" placeholder="Max: 120 characters">
+            <label for="id">Product ID</label>
+            <input type="text" id="id" name="id" required autocomplete="off" placeholder="Must be between 10 to 20 alphanumeric characters">
+            <label for="price">Price</label>
+            <input type="text" id="price" name="price" required autocomplete="off" placeholder="Max: 120 characters">
+            <label for="manufacturer">Manufacturer</label>
+            <input type="text" id="manufacturer" name="manufacturer" required autocomplete="off" placeholder="Max: 120 characters">
+            <label for="manufacture_date">Manufactured Date</label>
+            <input type="text" id="manufacture_date" name="manufacture_date" required autocomplete="off" placeholder="Max : 120 characters">
+            <label for="expiry_date">Expiry Date</label>
+            <input type="text" id="expiry_date" name="expiry_date" autocomplete="off" placeholder="leave empty if there is no expiry date, Max : 120 characters">
+            <label for="batch_number">Batch Number</label>
+            <input type="text" id="batch_number" name="batch_number" required autocomplete="off" placeholder="Max : 120 characters">
+            <label for="key">Secret Key</label>
+            <input type="text" id="key" name="key" required autocomplete="off" placeholder="Must be between 3 to 4 alphanumeric characters">
+            <button type="submit">Add to DB</button>
+        </div>
+    </form>
+</body>
+</html>

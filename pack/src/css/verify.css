@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #444;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://img.freepik.com/free-vector/perspective-japanese-street-neon-lights_52683-44988.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.text-successful {
+    color: #4CAF50;
+}
+
+.text-danger {
+    color: #f44336;
+}
+
+h1 {
+    text-align: center;
+}

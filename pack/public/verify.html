@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Company | Product Verification</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/verify.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Verify The Product Online</h1>
+        {% if message == None %}
+        <p class="text-successful">The product id you have entered is more likely original and authorazied by us!</p>
+        <p>Check if the below informations are correct or not. If not then your product is fake and duplicate</p>
+        <p>Product: {{ product.name }}</p>
+        <p>Price: {{ product.price }}</p>
+        <p>Manufactured by: {{ product.manufacturer }}</p>
+        <p>Manufactured date: {{ product.manufacture_date }}</p>
+        <p>Expiry date:{{ product.expiry_date }}</p>
+        <p>Batch number: {{ product.batch_number }}</p>
+        {% else %}
+        <p class="text-danger">The product id you have entered is not original and authorazied by us! Please double check if the product id or key is correct or not. <br><br>{{message}}</p>
+        {% endif %}
+    </div>
+    <div class="credit">
+        <p style="width: 100%; text-align: center;">
+            <a href="https://github.com/w3nabil">
+                <img src="{{url_for('static', filename='img/sponsor.png')}}" alt="" width="300px" height="auto">
+            </a>
+        </p>
+    </div>
+</body>
+</html>
